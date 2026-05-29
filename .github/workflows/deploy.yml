@@ -15,8 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-      - run: npm ci
+      - run: npm install
       - run: npx gatsby build
       - uses: cloudflare/pages-action@v1
         with:
